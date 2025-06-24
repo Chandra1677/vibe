@@ -1,0 +1,89 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f8faff;
+  color: #333;
+  animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.navbar {
+  background: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #e9f3ff;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  margin: 1rem;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+.product-card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+.section {
+  padding: 2rem;
+}
+.product-detail {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+.product-detail img {
+  width: 300px;
+}
+.cart-item {
+  background: white;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.checkout-form, .login-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+.checkout-form input, .login-form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
